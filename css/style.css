@@ -1,0 +1,52 @@
+/* Padding para que el contenido no quede pegado a la navbar fija */
+body {
+  padding-top: 70px;
+  background-color: #f8f9fa; /* Un color de fondo suave */
+}
+/* Estilo para los íconos de la navbar */
+.navbar-nav .nav-link i {
+  font-size: 1.4rem; /* Íconos un poco más grandes */
+}
+/* Ajuste para que el formulario no se encoja en pantallas pequeñas */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+  .w-50.mx-auto {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+/* =================== ESTILOS PARA SUBMENÚ =================== */
+/* Contenedor del submenú */
+.dropdown-submenu {
+  position: relative;
+}
+/* Posicionamiento del submenú para que aparezca a la izquierda */
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%; /* CAMBIO: cambiado de 'left: 100%' para que aparezca a la izquierda */
+  left: auto;
+  margin-left: 0;
+  margin-right: 0.1rem;
+  margin-top: -0.6rem;
+}
+/* Mostrar el submenú al pasar el ratón por encima del item padre */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+/* Flecha para indicar que hay un submenú (apuntando a la izquierda) */
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 5px 5px 0; /* CAMBIO: Dibuja una flecha que apunta a la izquierda */
+  border-right-color: currentColor; /* CAMBIO: Colorea el lado correcto de la flecha */
+  margin-top: 5px;
+  margin-right: -10px;
+}
