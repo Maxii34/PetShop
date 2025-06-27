@@ -75,3 +75,9 @@ footer {
 .pie-footer {
   background-color: #234b43;
 }
+
+.pet-carousel {
+  width: 60%;
+  height: 300px;
+  object-fit: cover;
+}
