@@ -1,12 +1,18 @@
 /* Padding para que el contenido no quede pegado a la navbar fija */
 body {
   padding-top: 70px;
-  background-color: #f8f9fa; /* Un color de fondo suave */
+  background-color: #f8f9fa;
 }
+
 /* Estilo para los íconos de la navbar */
 .navbar-nav .nav-link i {
   font-size: 1.4rem; /* Íconos un poco más grandes */
 }
+
+footer {
+  font-size: 0.95rem;
+}
+
 /* Ajuste para que el formulario no se encoja en pantallas pequeñas */
 @media (max-width: 992px) {
   .navbar-collapse {
@@ -49,4 +55,23 @@ body {
   border-right-color: currentColor; /* CAMBIO: Colorea el lado correcto de la flecha */
   margin-top: 5px;
   margin-right: -10px;
+}
+
+.icono-redes {
+  background-color: #212529;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-color {
+  background-color: #e6e7e6;
+  width: 100%;
+}
+.pie-footer {
+  background-color: #234b43;
 }
