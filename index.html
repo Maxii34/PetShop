@@ -20,7 +20,10 @@
   </head>
   <body>
     <header class="navbar-header fixed-top">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <!-- Barra principal con borde inferior -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary shadow-sm border-bottom"
+      >
         <div class="container">
           <a class="navbar-brand fw-bold" href="/index.html">PetShop</a>
 
@@ -37,7 +40,11 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="position-relative w-50 ms-auto" role="search">
+            <!-- Formulario de búsqueda -->
+            <form
+              class="position-relative w-100 w-md-75 w-lg-50 ms-auto mb-3 mb-lg-0"
+              role="search"
+            >
               <input
                 type="search"
                 class="form-control ps-4 pe-5"
@@ -49,120 +56,17 @@
               ></i>
             </form>
 
+            <!-- Menú de navegación -->
             <ul
-              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center"
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row gap-3 align-items-center"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href=""
-                  >Inicio</a
-                >
+                <a class="nav-link active" href="#">Inicio</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="">Ofertas</a></li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Más Opciones
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><h6 class="dropdown-header">Categorías</h6></li>
-
-                  <!-- Submenú para Perros -->
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item" href="#">Perros</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <h6 class="dropdown-header">Alimentos Balanceados</h6>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Agility</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Excellent</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Eukanuba</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Nutrique</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Pro Plan</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Old Prince</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Vital Can</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <h6 class="dropdown-header">Accesorios</h6>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Colchonetas y cuchas</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Elementos de paseo</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Snacks</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Ropas</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <!-- Submenú para Gatos -->
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item" href="#">Gatos</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <h6 class="dropdown-header">Alimentos Balanceados</h6>
-                      </li>
-                      <li><a class="dropdown-item" href="">Agility</a></li>
-                      <li><a class="dropdown-item" href="">Sieger</a></li>
-                      <li><a class="dropdown-item" href="">Excellent</a></li>
-                      <li><a class="dropdown-item" href="">Vital Can</a></li>
-                      <li><a class="dropdown-item" href="">Complete</a></li>
-                      <li><a class="dropdown-item" href="">Trerapy</a></li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <h6 class="dropdown-header">Accesorios</h6>
-                      </li>
-                      <li><a class="dropdown-item" href="">Comederos</a></li>
-                      <li>
-                        <a class="dropdown-item" href="">Trasportadores</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Arenas Sanitarias</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Juguetes y Rascadores</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li><a class="dropdown-item" href="#">Otras Mascotas</a></li>
-
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><h6 class="dropdown-header">Ayuda</h6></li>
-                  <li><a class="dropdown-item" href="#">Contacto</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Preguntas Frecuentes</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
               </li>
-
+              <!-- Iconos -->
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -174,7 +78,6 @@
                   <i class="bi bi-person-circle"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -190,8 +93,73 @@
           </div>
         </div>
       </nav>
+
+      <!-- Segunda barra de navegación -->
+      <nav class="navbar navbar-expand bg-light border-top border-bottom p-0">
+        <div class="container p-0">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="segundaBarra"
+          >
+            <ul class="navbar-nav">
+              <!-- Dropdown Perros -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Perros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item small" href="#">Alimentos</a></li>
+                  <li>
+                    <a class="dropdown-item small" href="#">Accesorios</a>
+                  </li>
+                  <li><a class="dropdown-item small" href="#">Snacks</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Gatos -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gatos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item small" href="#">Alimentos</a></li>
+                  <li>
+                    <a class="dropdown-item small" href="#">Accesorios</a>
+                  </li>
+                  <li><a class="dropdown-item small" href="#">Snacks</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link px-2 py-1 small" href="#">Otras mascotas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 py-1 small" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 py-1 small" href="#"
+                  >Nuevos Productos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="container-fluid">
+
+    <main class="container-fluid mt-md-5 mt-4">
       <section>
         <div
           id="carouselExampleAutoplaying"
@@ -230,19 +198,24 @@
         </div>
       </section>
 
-      <section>
+      <section class="my-5">
         <div class="row">
-          <div class="border col-12 col-md-3 col-lg-3">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+          <div class="col-12 col-md-3 col-lg-3">
+            <div class="card-hover shadow">
+              <img src="https://via.placeholder.com/300x200 " alt="Producto" />
               <div class="card-body">
-                <h5 class="card-title">Cepillo Recolector</h5>
-                <p class="card-text">12.800,00</p>
-                <p class="card-text">11.520,00 con Efectivo </p>
-                <span>3 Cuotas sin interes de $ 5,567</span>
-                <div class="d-flex align-content-end">
-                  <a href="#" class="button mx-1">Comprar</a>
-                  <a href="#" class="button mx-1">Ver</a>
+                <div>
+                  <h5 class="card-title mb-1">Alimento Balanceado</h5>
+                  <p class="card-text text-muted small mb-2">
+                    Marca: Agility - Perro Adulto
+                  </p>
+                  <p class="card-price fw-bold fs-5 mb-3">$120.00</p>
+                </div>
+                <div class="card-buttons">
+                  <button class="btn btn-primary btn-sm">Comprar</button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Ver más
+                  </button>
                 </div>
               </div>
             </div>
@@ -251,7 +224,7 @@
       </section>
 
       <section>
-        <!-- Modal de Carrito de Compras -->
+        <!-- Modal del Carrito -->
         <div
           class="modal fade"
           id="cartModal"
@@ -259,12 +232,10 @@
           aria-labelledby="cartModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="cartModalLabel">
-                  Tu Carrito de Compras
-                </h1>
+                <h5 class="modal-title" id="cartModalLabel">Tu Carrito</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -273,62 +244,190 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <!-- Contenido del carrito -->
-                <ul class="list-group list-group-flush">
-                  <!-- Item de ejemplo 1 -->
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h6 class="my-0">Alimento para Perros Premium</h6>
-                      <small class="text-muted"
-                        >Cantidad: 1 | Precio: $50.00</small
-                      >
+                <!-- Lista de productos -->
+                <div class="row g-3 mb-3">
+                  <!-- Producto 1 -->
+                  <div class="col-12">
+                    <div class="card border">
+                      <div class="row g-0">
+                        <div
+                          class="col-4 d-flex align-items-center justify-content-center"
+                        >
+                          <img
+                            src="https://via.placeholder.com/100 "
+                            alt="Producto 1"
+                            class="img-fluid rounded-start"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title mb-1">
+                              Alimento Balanceado Perro Adulto
+                            </h6>
+                            <p class="card-text mb-1 text-muted">
+                              Marca: Agility
+                            </p>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <span>$120.00</span>
+                              <div
+                                class="input-group w-auto"
+                                style="max-width: 120px"
+                              >
+                                <button
+                                  class="btn btn-outline-secondary px-2"
+                                  type="button"
+                                >
+                                  -
+                                </button>
+                                <input
+                                  type="text"
+                                  class="form-control text-center px-2"
+                                  value="1"
+                                />
+                                <button
+                                  class="btn btn-outline-secondary px-2"
+                                  type="button"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <span class="text-muted">$50.00</span>
-                    <button class="btn btn-sm btn-outline-danger">
-                      <i class="bi bi-trash"></i>
-                    </button>
-                  </li>
-                  <!-- Item de ejemplo 2 -->
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h6 class="my-0">Juguete Interactivo para Gatos</h6>
-                      <small class="text-muted"
-                        >Cantidad: 2 | Precio: $15.00 c/u</small
-                      >
+                  </div>
+
+                  <!-- Producto 2 -->
+                  <div class="col-12">
+                    <div class="card border">
+                      <div class="row g-0">
+                        <div
+                          class="col-4 d-flex align-items-center justify-content-center"
+                        >
+                          <img
+                            src="https://via.placeholder.com/100 "
+                            alt="Producto 2"
+                            class="img-fluid rounded-start"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Snack para Gato</h6>
+                            <p class="card-text mb-1 text-muted">
+                              Marca: Whiskas
+                            </p>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <span>$30.00</span>
+                              <div
+                                class="input-group w-auto"
+                                style="max-width: 120px"
+                              >
+                                <button
+                                  class="btn btn-outline-secondary px-2"
+                                  type="button"
+                                >
+                                  -
+                                </button>
+                                <input
+                                  type="text"
+                                  class="form-control text-center px-2"
+                                  value="2"
+                                />
+                                <button
+                                  class="btn btn-outline-secondary px-2"
+                                  type="button"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <span class="text-muted">$30.00</span>
-                    <button class="btn btn-sm btn-outline-danger">
-                      <i class="bi bi-trash"></i>
-                    </button>
-                  </li>
-                </ul>
-                <hr />
-                <div class="d-flex justify-content-between">
-                  <h5>Total (USD)</h5>
-                  <strong>$80.00</strong>
+                  </div>
+
+                  <!-- Producto 3 -->
+                  <div class="col-12">
+                    <div class="card border">
+                      <div class="row g-0">
+                        <div
+                          class="col-4 d-flex align-items-center justify-content-center"
+                        >
+                          <img
+                            src="https://via.placeholder.com/100 "
+                            alt="Producto 3"
+                            class="img-fluid rounded-start"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Collar Reflectante</h6>
+                            <p class="card-text mb-1 text-muted">Tamaño: M</p>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <span>$45.00</span>
+                              <div
+                                class="input-group w-auto"
+                                style="max-width: 120px"
+                              >
+                                <button
+                                  class="btn btn-outline-secondary px-2"
+                                  type="button"
+                                >
+                                  -
+                                </button>
+                                <input
+                                  type="text"
+                                  class="form-control text-center px-2"
+                                  value="1"
+                                />
+                                <button
+                                  class="btn btn-outline-secondary px-2"
+                                  type="button"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Total -->
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3 fw-bold"
+                >
+                  <span>Total:</span>
+                  <span>$295.00</span>
                 </div>
               </div>
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  class="btn btn-outline-secondary"
                   data-bs-dismiss="modal"
                 >
-                  Seguir Comprando
+                  Continuar comprando
                 </button>
                 <button type="button" class="btn btn-success">
-                  Finalizar Compra
+                  Ir al Pago
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <!--Segundo modal-->
-        <!-- Modal de Login -->
+
+        <!-- Modal de Iniciar Sesión -->
         <div
           class="modal fade"
           id="loginModal"
@@ -336,12 +435,10 @@
           aria-labelledby="loginModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="loginModalLabel">
-                  Iniciar Sesión
-                </h1>
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -352,41 +449,41 @@
               <div class="modal-body">
                 <form>
                   <div class="mb-3">
-                    <label for="emailInput" class="form-label"
-                      >Correo Electrónico</label
+                    <label for="email" class="form-label"
+                      >Correo electrónico</label
                     >
                     <input
                       type="email"
                       class="form-control"
-                      id="emailInput"
+                      id="email"
                       placeholder="tu@email.com"
+                      required
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="passwordInput" class="form-label"
-                      >Contraseña</label
-                    >
+                    <label for="password" class="form-label">Contraseña</label>
                     <input
                       type="password"
                       class="form-control"
-                      id="passwordInput"
+                      id="password"
+                      placeholder="••••••••"
+                      required
                     />
                   </div>
-                  <div class="mb-3 form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="rememberCheck"
-                    />
-                    <label class="form-check-label" for="rememberCheck"
-                      >Recordarme</label
-                    >
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">
+                      Iniciar Sesión
+                    </button>
+                  </div>
+                  <div class="mt-3 text-center">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
                   </div>
                 </form>
               </div>
-              <div class="modal-footer justify-content-between">
-                <a href="#" class="text-decoration-none">Crear cuenta</a>
-                <button type="button" class="btn btn-primary">Ingresar</button>
+              <div class="modal-footer justify-content-center">
+                <p class="mb-0">
+                  ¿No tienes cuenta? <a href="#">Regístrate</a>
+                </p>
               </div>
             </div>
           </div>

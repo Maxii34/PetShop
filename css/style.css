@@ -104,3 +104,80 @@ footer {
   color: #aaa;
 }
 
+/* Estilo opcional para la segunda barra */
+.navbar.bg-light {
+  font-size: 0.9rem;
+}
+
+.navbar.bg-light .nav-link {
+  color: #495057;
+  padding: 0.5rem 1rem;
+}
+
+.navbar.bg-light .nav-link:hover,
+.navbar.bg-light .dropdown-item:hover {
+  background-color: #e9ecef;
+  color: #212529;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.card-hover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 320px; /* Altura inicial más pequeña */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-hover img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  padding: 0.75rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.card-buttons {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+
+.card-hover:hover .card-buttons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.card-hover:hover {
+  height: 300px; /* Puede mantenerse igual o aumentar un poco */
+}
