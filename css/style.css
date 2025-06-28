@@ -181,3 +181,13 @@ footer {
 .card-hover:hover {
   height: 300px; /* Puede mantenerse igual o aumentar un poco */
 }
+
+/**/ nav se oculta
+
+.sticky-second-nav {
+  transition: transform 0.3s ease;
+}
+.sticky-second-nav.hidden {
+  transform: translateY(100%);
+}
+

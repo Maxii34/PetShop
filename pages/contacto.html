@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Maximiliano Ordoñez" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>PetShop Apolo</title>
+  </head>
+  <body>
+    <header class="navbar-header fixed-top">
+      <!-- Barra principal con borde inferior -->
+      <nav class="navbar navbar-expand-lg shadow-sm border-bottom footer-color">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="/index.html">PetShop</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Formulario de búsqueda -->
+            <form
+              class="position-relative w-100 w-md-75 w-lg-50 ms-auto mb-3 mb-lg-0"
+              role="search"
+            >
+              <input
+                type="search"
+                class="form-control ps-4 pe-5"
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar"
+              />
+              <i
+                class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+              ></i>
+            </form>
+
+            <!-- Menú de navegación -->
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row gap-1 align-items-center"
+            >
+              <li class="nav-item mx-1">
+                <a class="nav-link active" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <!-- Iconos -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  title="Iniciar Sesión"
+                >
+                  <i class="bi bi-person-circle"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cartModal"
+                  title="Carrito de Compras"
+                >
+                  <i class="bi bi-cart3"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Segunda barra de navegación -->
+      <nav
+        class="navbar navbar-expand border-top border-bottom p-0 sticky-second-nav"
+      >
+        <div class="container p-0">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="segundaBarra"
+          >
+            <ul class="navbar-nav">
+              <!-- Dropdown Perros -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Perros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Alimentos Balanceados</h6>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Agility</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Excellent</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Eukanuba</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nutrique</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Pro Plan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Old Prince</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vital Can</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Accesorios</h6>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Colchonetas y cuchas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Elementos de paseo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Snacks</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ropas</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Gatos -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gatos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Alimentos Balanceados</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="">Agility</a></li>
+                  <li><a class="dropdown-item" href="">Sieger</a></li>
+                  <li><a class="dropdown-item" href="">Excellent</a></li>
+                  <li><a class="dropdown-item" href="">Vital Can</a></li>
+                  <li><a class="dropdown-item" href="">Complete</a></li>
+                  <li><a class="dropdown-item" href="">Trerapy</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Accesorios</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="">Comederos</a></li>
+                  <li>
+                    <a class="dropdown-item" href="">Trasportadores</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Arenas Sanitarias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Juguetes y Rascadores</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link px-2 py-1 small" href="/pages/otrasmascotas.html">Otras mascotas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 py-1 small" href="/pages/promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 py-1 small" href="/pages/nuevosproductos.html"
+                  >Nuevos Productos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <footer class="py-5 border-top footer-color">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1: Categorías -->
+          <div class="col-12 col-md-4 col-lg-4 mb-4 text-center text-md-start">
+            <h5 class="fw-bold mb-3">Categorías</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Quienes Somos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Trabajá con nosotros</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Cómo Comprar</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Política de Devolución</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block"
+                  >Términos y condiciones consulta online</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Contacto -->
+          <div class="col-12 col-md-4 col-lg-4 mb-4 text-center text-md-start">
+            <h5 class="fw-bold mb-3">Contáctanos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-whatsapp me-2"></i>54-3456673456
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i>PetShopApolo@gmail.com
+              </li>
+              <li>
+                <i class="bi bi-geo-alt me-2"></i> Sucursales en : San Miguel de
+                Tucumán - Yerba Buena - Tafí Viejo - Banda del Río Salí
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Redes Sociales -->
+          <div class="col-12 col-md-4 col-lg-4 text-center text-md-start">
+            <h5 class="fw-bold mb-3">Sigamos conectados</h5>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-instagram fs-5"></i>
+              </a>
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-tiktok fs-5"></i>
+              </a>
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 4: Medios De Pados -->
+          <div class="container py-4 text-center text-md-start">
+            <div class="row">
+              <div class="col-12">
+                <h6 class="fw-bold mb-3">Medios de pago</h6>
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                  <!-- Reemplazá los src por tus imágenes reales -->
+                  <img
+                    src="https://img.icons8.com/color/48/000000/visa.png"
+                    alt="Visa"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/mastercard.png"
+                    alt="MasterCard"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/amex.png"
+                    alt="American Express"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/diners-club.png"
+                    alt="Diners Club"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/bank-card-back-side.png"
+                    alt="Cabal"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/bank-card-front-side.png"
+                    alt="Naranja"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie de Footer-->
+      <div class="py-3 pie-footer">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-center align-items-center small"
+        >
+          <p class="mb-2 mb-md-0 text-light">
+            Copyright PetShop Apolo - 2025. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
