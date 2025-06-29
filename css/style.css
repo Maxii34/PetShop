@@ -147,7 +147,7 @@ nav se oculta .sticky-second-nav {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  gap: 1rem; /* Espaciado entre tarjetas */
+  gap: 1rem;
   padding: 1rem 0;
 }
 
@@ -187,7 +187,7 @@ nav se oculta .sticky-second-nav {
 }
 
 .installments {
-  font-size: 14px; /* 0.85rem */
+  font-size: 14px;
   color: #666;
 }
 
@@ -196,8 +196,8 @@ nav se oculta .sticky-second-nav {
   background-color: #2c3e50;
   color: white;
   border-radius: 30px;
-  padding: 6px 16px; /* 0.4rem 1rem → ~6px 16px */
-  font-size: 14px; /* 0.9rem */
+  padding: 6px 16px; 
+  font-size: 14px; 
   font-weight: 500;
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -210,15 +210,16 @@ nav se oculta .sticky-second-nav {
 
 .btn-eye {
   border-radius: 30px;
-  padding: 6px 16px; /* 0.4rem 1rem → ~6px 16px */
-  font-size: 14px; /* 0.9rem */
+  padding: 6px 16px; 
+  font-size: 14px; 
   font-weight: 500;
   color: #666;
   border: 1px solid #ccc;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out; 
 }
 
 .btn-eye:hover {
   background-color: #f1f1f1;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
