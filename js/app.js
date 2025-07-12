@@ -5,7 +5,7 @@
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     // Definimos desde qué posición queremos que empiece a ocultarse
-    const threshold = 100;
+    const threshold = 300;
 
     if (scrollTop > threshold) {
       // Si va hacia abajo
