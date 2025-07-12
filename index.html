@@ -21,7 +21,7 @@
   <body>
     <header class="navbar-header fixed-top">
       <!-- Barra principal con borde inferior -->
-      <nav class="navbar navbar-expand-lg shadow-sm border-bottom footer-color">
+      <nav id="navbar-main" class="navbar navbar-expand-lg shadow-sm border-bottom footer-color">
         <div class="container">
           <a class="navbar-brand fw-bold" href="/index.html">PetShop</a>
 
@@ -91,11 +91,8 @@
           </div>
         </div>
       </nav>
-
       <!-- Segunda barra de navegación -->
-      <nav
-        class="navbar navbar-expand border-top border-bottom p-0 sticky-second-nav"
-      >
+      <nav id="navbar-secondary" class="navbar navbar-expand border-top border-bottom p-0 sticky-second-nav">
         <div class="container p-0">
           <div
             class="collapse navbar-collapse justify-content-center"
@@ -217,7 +214,6 @@
     </header>
 
     <main class="container mt-md-5 mt-4">
-
       <section class="my-4">
         <div class="container">
           <div class="grid-container">
@@ -230,7 +226,9 @@
                   class="card-img-top"
                 />
                 <div class="card-body d-flex text-center flex-column bod-top">
-                  <p class="card-title fw-bold">Agility Gatos Adulto Urinario x 10Kg.</p>
+                  <p class="card-title fw-bold">
+                    Agility Gatos Adulto Urinario x 10Kg.
+                  </p>
                   <p class="price-main mt-2 mb-0">$ 64.000,00</p>
                   <p class="price-cash mt-1 mb-1">$ 55.800,00 con Efectivo</p>
                   <p class="installments mb-3">
@@ -253,7 +251,9 @@
                   class="card-img-top"
                 />
                 <div class="card-body d-flex text-center flex-column bod-top">
-                  <p class="card-title fw-bold">Excelent Perro Adulto, razas pequeñas x 20Kg.</p>
+                  <p class="card-title fw-bold">
+                    Excelent Perro Adulto, razas pequeñas x 20Kg.
+                  </p>
                   <p class="price-main mt-2 mb-0">$ 52.000,00</p>
                   <p class="price-cash mt-1 mb-1">$ 45.800,00 con Efectivo</p>
                   <p class="installments mb-3">
@@ -276,7 +276,9 @@
                   class="card-img-top"
                 />
                 <div class="card-body d-flex text-center flex-column bod-top">
-                  <p class="card-title fw-bold">Agility Perro Adulto, derma control x 20Kg.</p>
+                  <p class="card-title fw-bold">
+                    Agility Perro Adulto, derma control x 20Kg.
+                  </p>
                   <p class="price-main mt-2 mb-0">$ 62.000,00</p>
                   <p class="price-cash mt-1 mb-1">$ 55.800,00 con Efectivo</p>
                   <p class="installments mb-3">
@@ -299,7 +301,10 @@
                   class="card-img-top"
                 />
                 <div class="card-body d-flex text-center flex-column bod-top">
-                  <p class="card-title fw-bold">Agility Perro Adulto <br> x 20Kg.</p>
+                  <p class="card-title fw-bold">
+                    Agility Perro Adulto <br />
+                    x 20Kg.
+                  </p>
                   <p class="price-main mt-2 mb-0">$ 58.000,00</p>
                   <p class="price-cash mt-1 mb-1">$ 55.800,00 con Efectivo</p>
                   <p class="installments mb-3">
@@ -953,7 +958,10 @@
             data-bs-target="#carouselExampleFade"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+            <span
+              class="carousel-control-next-icon text-dark"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -1226,12 +1234,10 @@
         </div>
       </section>
 
-      <section>
-        
-      </section>
+      <section></section>
     </main>
 
-    <footer class="py-5 border-top footer-color">
+    <footer class="pt-3 border-top footer-color">
       <div class="container">
         <div class="row">
           <!-- Columna 1: Categorías -->
@@ -1353,11 +1359,11 @@
       </div>
 
       <!-- Pie de Footer-->
-      <div class="py-3 pie-footer">
+      <div class="pie-footer py-4 shadow">
         <div
           class="container d-flex flex-column flex-md-row justify-content-center align-items-center small"
         >
-          <p class="mb-2 mb-md-0 text-light">
+          <p class="mb- mb-md-0 text-light">
             Copyright PetShop Apolo - 2025. Todos los derechos reservados.
           </p>
         </div>
@@ -1368,5 +1374,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
