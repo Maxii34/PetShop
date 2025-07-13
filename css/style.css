@@ -328,6 +328,23 @@ nav se oculta .sticky-second-nav {
   height: 100%;
 }
 
+/*Grilla productos-info*/
+
+.grid-info {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* Para pantallas menores a 768px (medianas y pequeñas) */
+@media (max-width: 768px) {
+  .grid-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 form label {
   text-align: left;
