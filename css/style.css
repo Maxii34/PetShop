@@ -173,26 +173,7 @@ nav se oculta .sticky-second-nav {
   border-top: 4px solid rgba(24, 21, 21, 0.671);
 }
 
-/* Grilla Responsive */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  gap: 1rem;
-  padding: 1rem 0;
-}
 
-.grid-carousel {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  padding: 1rem 0;
-}
-
-.card-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
 /* Estilo base de la tarjeta */
 .product-card {
@@ -308,9 +289,9 @@ nav se oculta .sticky-second-nav {
 }
 
 /*Contacto*/
-.grid-container {
+.grid-contacto {
   display: grid;
-  grid-template-columns: 1fr; /* 1 columna por defecto (mobile-first) */
+  grid-template-columns: repeat(2, 1fr); /* 1 columna por defecto (mobile-first) */
   gap: 10px;
   padding: 10px;
 }
@@ -322,9 +303,31 @@ nav se oculta .sticky-second-nav {
 
 @media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas grandes */
+    grid-template-columns: repeat(1, 1fr); /* 2 columnas en pantallas grandes */
   }
 }
+
+/* Grilla index */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+/* Grilla index carousel */
+.grid-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 
 form label {
   text-align: left;
