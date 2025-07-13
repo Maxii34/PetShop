@@ -358,9 +358,12 @@ form label {
   position: relative;
   overflow: hidden;
 }
+.main-image-container img {
+  transition: transform 0.6s ease; 
+}
+
 .main-image-container img:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease;
 }
 .thumbnail-gallery {
   display: flex;
