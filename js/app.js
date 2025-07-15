@@ -19,3 +19,14 @@
 
     lastScrollTop = scrollTop;
   });
+
+  //Cards extras
+  
+  const btn = document.getElementById("mostrarMas");
+  const extraCards = document.querySelectorAll(".extra-card");
+
+  btn.addEventListener("click", () => {
+    extraCards.forEach(card => card.classList.remove("d-none"));
+    btn.style.display = "none"; // Oculta el botón si ya no hay más
+  });
+
