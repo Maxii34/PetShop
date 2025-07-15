@@ -454,9 +454,9 @@ footer {
     scroll-snap-type: x mandatory;
 }
 
-.product-card { /* Esta clase es usada en productos-grid y product-card (carrusel de cards) */
+.product-card { 
     scroll-snap-align: start;
-    min-width: 250px;
+    min-width: 260px;
 }
 
 /* Para pantallas más grandes (desktop) */
