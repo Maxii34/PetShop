@@ -277,10 +277,12 @@ footer {
     overflow: hidden;
     transition: box-shadow 0.5s ease-in-out;
     height: 100%;
+    user-select: none;
 }
 
 .product-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
 }
 
 .card-img-top {
@@ -308,6 +310,19 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.card-buttons {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.product-card:hover .card-buttons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /* --- Carrusel (para imágenes o cards) --- */
