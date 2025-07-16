@@ -21,7 +21,7 @@
   <body>
     <header class="navbar-header fixed-top">
       <!-- Barra principal con borde inferior -->
-      <nav class="navbar navbar-expand-lg shadow-sm border-bottom footer-color">
+      <nav id="navbar-main" class="navbar navbar-expand-lg shadow-sm border-bottom footer-color">
         <div class="container">
           <a class="navbar-brand fw-bold" href="/index.html">PetShop</a>
 
@@ -86,6 +86,137 @@
                 >
                   <i class="bi bi-cart3"></i>
                 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+            <!-- Segunda barra de navegación -->
+      <nav
+        id="navbar-secondary"
+        class="navbar navbar-expand border-top nav-sec p-0 sticky-second-nav shadow"
+      >
+        <div class="container py-0">
+          <div
+            class="collapse navbar-collapse justify-content-center m-0"
+            id="segundaBarra"
+          >
+            <ul
+              class="navbar-nav d-flex flex-wrap justify-content-center w-100 text-center"
+            >
+              <!-- Dropdown Perros -->
+              <li class="nav-item dropdown mx-2">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Perros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Alimentos Balanceados</h6>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Agility</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Excellent</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Eukanuba</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nutrique</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Pro Plan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Old Prince</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vital Can</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Accesorios</h6>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Colchonetas y cuchas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Elementos de paseo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Snacks</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ropas</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Gatos -->
+              <li class="nav-item dropdown mx-2 mx-2">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gatos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Alimentos Balanceados</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="">Agility</a></li>
+                  <li><a class="dropdown-item" href="">Sieger</a></li>
+                  <li><a class="dropdown-item" href="">Excellent</a></li>
+                  <li><a class="dropdown-item" href="">Vital Can</a></li>
+                  <li><a class="dropdown-item" href="">Complete</a></li>
+                  <li><a class="dropdown-item" href="">Trerapy</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Accesorios</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="">Comederos</a></li>
+                  <li>
+                    <a class="dropdown-item" href="">Trasportadores</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Arenas Sanitarias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Juguetes y Rascadores</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item mx-2 d-none d-md-block">
+                <a
+                  class="nav-link px-2 py-1 small text-light"
+                  href="/pages/otrasmascotas.html"
+                  >Otras mascotas</a
+                >
+              </li>
+              <li class="nav-item mx-2 d-none d-md-block">
+                <a
+                  class="nav-link px-2 py-1 small text-light"
+                  href="/pages/promociones.html"
+                  >Promociones</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link px-2 py-1 small text-light"
+                  href="/pages/nuevosproductos.html"
+                  >Nuevos Productos</a
+                >
               </li>
             </ul>
           </div>
@@ -390,5 +521,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
