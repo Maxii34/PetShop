@@ -584,27 +584,20 @@ h4 {
 }
 
 p {
-  font-size: 18px; /* Tamaño del texto */
-  color: #6c757d; /* Color gris oscuro */
-  margin-top: 10px; /* Espaciado con el título */
-  margin-bottom: 20px; /* Espaciado con el botón */
+  font-size: 18px; 
+  color: #6c757d;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.btn3 {
-  display: inline-block;
-  padding: 10px 20px; /* Espaciado interno del botón */
-  font-size: 16px; /* Tamaño del texto del botón */
-  font-weight: bold; /* Fuente negrita */
-  color: #007bff; /* Color del texto */
-  border: 2px solid #007bff; /* Borde azul */
-  border-radius: 20px; /* Bordes redondeados */
-  background-color: transparent; /* Fondo transparente */
-  text-decoration: none; /* Elimina subrayado del enlace */
-  transition: background-color 0.3s ease; /* Transición suave */
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Hover del botón */
-.btn3:hover {
-  background-color: #007bff; /* Cambia el fondo al hacer hover */
-  color: white; /* Cambia el texto a blanco */
-}
+.texto-h {
+
+} 
+
