@@ -583,21 +583,11 @@ h4 {
   margin-right: 10px;
 }
 
-p {
+.p-mural {
   font-size: 18px; 
   color: #6c757d;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-
-.centrado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.texto-h {
-
-} 
 

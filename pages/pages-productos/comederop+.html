@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Maximiliano Ordoñez" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>PetShop Apolo</title>
+  </head>
+  <body>
+    <header class="navbar-header fixed-top">
+      <!-- Barra principal con borde inferior -->
+      <nav
+        id="navbar-main"
+        class="navbar navbar-expand-lg shadow-sm border-bottom footer-color"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="/index.html">PetShop</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Formulario de búsqueda -->
+            <form
+              class="position-relative w-100 w-md-75 w-lg-50 ms-auto mb-3 mb-lg-0"
+              role="search"
+            >
+              <input
+                type="search"
+                class="form-control ps-4 pe-5"
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar"
+              />
+              <i
+                class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+              ></i>
+            </form>
+
+            <!-- Menú de navegación -->
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row gap-1 align-items-center"
+            >
+              <li class="nav-item mx-1">
+                <a class="nav-link active" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <!-- Iconos -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  title="Iniciar Sesión"
+                >
+                  <i class="bi bi-person-circle"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cartModal"
+                  title="Carrito de Compras"
+                >
+                  <i class="bi bi-cart3"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Segunda barra de navegación -->
+      <nav
+        id="navbar-secondary"
+        class="navbar navbar-expand border-top nav-sec p-0 sticky-second-nav shadow"
+      >
+        <div class="container py-0">
+          <div
+            class="collapse navbar-collapse justify-content-center m-0"
+            id="segundaBarra"
+          >
+            <ul
+              class="navbar-nav d-flex flex-wrap justify-content-center w-100 text-center"
+            >
+              <!-- Dropdown Perros -->
+              <li class="nav-item dropdown mx-2">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Perros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Alimentos Balanceados</h6>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Agility</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Excellent</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Eukanuba</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nutrique</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Pro Plan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Old Prince</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vital Can</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Accesorios</h6>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Colchonetas y cuchas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Elementos de paseo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Snacks</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ropas</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Gatos -->
+              <li class="nav-item dropdown mx-2 mx-2">
+                <a
+                  class="nav-link dropdown-toggle px-2 py-1 small text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gatos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Alimentos Balanceados</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="">Agility</a></li>
+                  <li><a class="dropdown-item" href="">Sieger</a></li>
+                  <li><a class="dropdown-item" href="">Excellent</a></li>
+                  <li><a class="dropdown-item" href="">Vital Can</a></li>
+                  <li><a class="dropdown-item" href="">Complete</a></li>
+                  <li><a class="dropdown-item" href="">Trerapy</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Accesorios</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="">Comederos</a></li>
+                  <li>
+                    <a class="dropdown-item" href="">Trasportadores</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Arenas Sanitarias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Juguetes y Rascadores</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item mx-2 d-none d-md-block">
+                <a
+                  class="nav-link px-2 py-1 small text-light"
+                  href="/pages/otrasmascotas.html"
+                  >Otras mascotas</a
+                >
+              </li>
+              <li class="nav-item mx-2 d-none d-md-block">
+                <a
+                  class="nav-link px-2 py-1 small text-light"
+                  href="/pages/promociones.html"
+                  >Promociones</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link px-2 py-1 small text-light"
+                  href="/pages/nuevosproductos.html"
+                  >Nuevos Productos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="my-4">
+        <div class="grid-info">
+          <!--div del contenido superior (imagen, descripcion, precio)-->
+          <div class="p-2">
+            <div class="main-image-container producto-imagen rounded-4">
+              <img
+                src="/img/Screenshot_35.png"
+                alt="Agility Gato Urinario"
+                class="w-100 rounded-4"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Descripción del producto-->
+            <div class="p-2 producto-info">
+              <p class="fs-6">
+                Práctico, liviano y fácil de limpiar. Este comedero plástico es
+                ideal para perros y gatos, apto tanto para alimento como para
+                agua.
+              </p>
+              <p class="fs-6">
+                - Colores disponibles: Rosa pastel, celeste pastel y verde
+                pastel
+              </p>
+              <p class="fs-6">
+                Disponible en tres tamaños, se adapta a la necesidad de cada
+                mascota: 
+              </p>
+              <ul>
+                <li>📏 Medidas disponibles:</li>
+                <li>Chico: 14 × 10,5 × 4,6 cm</li>
+                <li>Mediano: 18,3 × 15,3 × 5,5 cm</li>
+                <li>Grande: 21 × 18,5 × 6 cm</li>
+              </ul>
+              <p class="fs-6">
+                Dale a tu mascota lo mejor en alimentos y visitá tu sucursal La
+                Mascotera más cercana para encontrar todos los productos de la
+                calidad que tu compañero peludo se merece.
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna de precios e info-->
+          <div class="producto-precio">
+            <div class="p-3">
+              <div>
+                <p class="mb-0">
+                  <a
+                    href="/index.html"
+                    class="fs-6 text-muted text-decoration-none"
+                    >Inicio</a
+                  >
+                  &gt;
+                  <a href="#" class="fs-6 text-muted text-decoration-none"
+                    >Gatos</a
+                  >
+                  &gt;
+                  <a href="#" class="fs-6 text-muted text-decoration-none"
+                    >Accesorios</a
+                  >
+                  &gt;
+                  <a href="#" class="fs-6 text-muted text-decoration-none"
+                    >Comederos</a
+                  >
+                  &gt;
+                  <span class="fw-semibold text-dark">Comederos plasticos</span>
+                </p>
+              </div>
+              <div class="border-bottom">
+                <h4 class="my-2">
+                  <b>Comederos plasticos</b>
+                </h4>
+                <p class="my-2 fs-3"><b>$1.500,00</b></p>
+                <span class="text-light-emphasis text-muted"
+                  >Precio sin impuestos $1.200,00</span
+                >
+                <p class="text-success mb-0">
+                  <b>$1,150,00 con efectivo. 🤑</b><br />
+                  <span class="d-block mt-1 small"
+                    >Con transferencia con un recargo del 5%.</span
+                  >
+                </p>
+
+                <!-- Botón para desplegar -->
+                <button
+                  class="btn btn-outline-secondary btn-sm my-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#metodoPago"
+                  aria-expanded="false"
+                  aria-controls="metodoPago"
+                >
+                  Ver modo de pago
+                </button>
+
+                <!-- Solo el de 3 cuotas SIN interés -->
+                <div class="collapse mb-2" id="metodoPago">
+                  <p class="m-1">
+                    <i class="bi bi-cash"></i> Hasta 3 cuotas <b>SIN</b> interés
+                    con tarjeta de <b>DÉBITO</b>.
+                  </p>
+                  <p class="m-1">
+                    <i class="bi bi-cash"></i> Hasta 4 y 6 cuotas
+                    <b>SIN</b> interés con tarjeta de <b>Narnja X</b>.
+                  </p>
+                  <p class="m-1">
+                    <i class="bi bi-cash"></i> Hasta 6,9 o 12 cuotas
+                    <b>SIN</b> interés con tarjeta de <b>Visa</b> bancaria.
+                  </p>
+                </div>
+                <p class="my-1">
+                  <i class="bi bi-coin"></i> 10% de descuento pagando con
+                  Efectivo
+                </p>
+                <a href="#" class="text-decoration-none text-black"
+                  >Ver más detalles</a
+                >
+              </div>
+
+              <div>
+                <div class="mt-2">
+                  <p>Tamaño: <b>Mediano</b></p>
+                  <a href="" class="btn btn-outline-dark">Chico</a>
+                  <a href="" class="btn btn-outline-dark">Mediano</a>
+                  <a href="" class="btn btn-outline-dark">Grande</a>
+                </div>
+              </div>
+
+              <div class="my-2">
+                <p>
+                  <i class="bi bi-wallet2"></i> Envíos Programados GRATIS con
+                  compras superiores a $ 15.000
+                </p>
+              </div>
+
+              <!-- NUEVA SECCIÓN DE ENVÍOS -->
+              <div class="mt-3 border-top pt-3">
+                <div class="d-flex align-items-center mb-2">
+                  <button class="btn btn-outline-dark px-3 py-1">−</button>
+                  <span class="mx-2">1</span>
+                  <button class="btn btn-outline-dark px-3 py-1">+</button>
+                  <button class="btn btn-dark ms-3">AGREGAR AL CARRITO</button>
+                </div>
+
+                <div class="mb-2">
+                  <i class="bi bi-truck"></i> Medios de envío
+                </div>
+
+                <div class="input-group mb-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Tu código postal"
+                  />
+                  <button class="btn btn-outline-dark">CALCULAR</button>
+                </div>
+
+                <div class="mb-2">
+                  <strong>Zonas de Envíos Programados y Express por CP</strong
+                  ><br />
+                  <small class="text-muted">
+                    San Miguel de Tucumán (4000-4001-4002) - Yerba Buena (4107)
+                    - Banda del Río Salí (4109) - Tafí Viejo (4103) - San José
+                    (4107) - Las Talitas (4101) - Lomas de Tafí (4103) - Villa
+                    Carmela (4103) - Concepción (4146)
+                  </small>
+                </div>
+
+                <div class="mb-2">
+                  <strong>Envíos</strong><br />
+                  <small class="text-muted">
+                    Envíos Programados de Lunes a Sábados - Te contamos que
+                    debido al alto volumen de pedidos durante MASCO WEEK, las
+                    entregas pueden presentar una leve demora.
+                  </small>
+                </div>
+
+                <div>
+                  <strong
+                    >Envíos Programados GRATIS con compras superiores a $
+                    12.000</strong
+                  >
+                </div>
+              </div>
+              <!-- FIN NUEVA SECCIÓN -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--cards- con scroll-->
+      <section class="container my-5">
+        <h5 class="mb-4 fw-bold scroll-wrapper text-center fs-2">
+          Productos relacionados
+        </h5>
+        <div class="productos-grid">
+          <!-- Card 1 -->
+          <div class="card product-card">
+            <img
+              src="/img/Screenshot_15.png"
+              alt="Producto"
+              class="card-img-top"
+            />
+            <div class="card-body text-center d-flex flex-column bod-top">
+              <p class="card-title fw-bold">
+                Complete Gato Adulto Control de Peso/Castrado x 1.5 kg.
+              </p>
+              <p class="price-main mt-2 mb-0">$11.500,00</p>
+              <p class="price-cash mt-1 mb-1">$9.900,00 con Efectivo</p>
+              <p class="installments mb-3">3 cuotas sin interés de $1.866,67</p>
+              <div class="mt-auto d-flex justify-content-center">
+                <button class="btn btn-carousel mx-1 flex-shrink-0">
+                  COMPRAR
+                </button>
+                <button class="btn btn-eye-carousel mx-1 flex-shrink-0">
+                  <i class="bi bi-eye me-1"></i> VER
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card product-card">
+            <img
+              src="/img/Screenshot_16.png"
+              alt="Producto"
+              class="card-img-top"
+            />
+            <div class="card-body text-center d-flex flex-column bod-top">
+              <p class="card-title fw-bold">COMEDERO DE ACERO INOXIDABLE</p>
+              <p class="price-main mt-2 mb-0">$6.800,00</p>
+              <p class="price-cash mt-1 mb-1">$5.300,00 con Efectivo</p>
+              <p class="installments mb-3">3 cuotas sin interés de $1.866,67</p>
+              <div class="mt-auto d-flex justify-content-center">
+                <button class="btn btn-carousel mx-1 flex-shrink-0">
+                  COMPRAR
+                </button>
+                <button class="btn btn-eye-carousel mx-1 flex-shrink-0">
+                  <i class="bi bi-eye me-1"></i> VER
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card product-card">
+            <img
+              src="/img/Screenshot_18.png"
+              alt="Producto"
+              class="card-img-top"
+            />
+            <div class="card-body text-center d-flex flex-column bod-top">
+              <p class="card-title fw-bold">
+                Pipeta Perfos Max Gato hasta 4 kg.
+              </p>
+              <p class="price-main mt-2 mb-0">$3.700,00</p>
+              <p class="price-cash mt-1 mb-1">$2.300,00 con Efectivo</p>
+              <p class="installments mb-3">3 cuotas sin interés de $1.866,67</p>
+              <div class="mt-auto d-flex justify-content-center">
+                <button class="btn btn-carousel mx-1 flex-shrink-0">
+                  COMPRAR
+                </button>
+                <button class="btn btn-eye-carousel mx-1 flex-shrink-0">
+                  <i class="bi bi-eye me-1"></i> VER
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card product-card">
+            <img
+              src="/img/Screenshot_19.png"
+              alt="Producto"
+              class="card-img-top"
+            />
+            <div class="card-body text-center d-flex flex-column bod-top">
+              <p class="card-title fw-bold">
+                Complete Adulto Raza Mediana y Grande x 20
+              </p>
+              <p class="price-main mt-2 mb-0">$51.400,00</p>
+              <p class="price-cash mt-1 mb-1">$48.300,00 con Efectivo</p>
+              <p class="installments mb-3">3 cuotas sin interés de $1.866,67</p>
+              <div class="mt-auto d-flex justify-content-center">
+                <button class="btn btn-carousel mx-1 flex-shrink-0">
+                  COMPRAR
+                </button>
+                <button class="btn btn-eye-carousel mx-1 flex-shrink-0">
+                  <i class="bi bi-eye me-1"></i> VER
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card product-card">
+            <img
+              src="/img/Screenshot_22.png"
+              alt="Producto"
+              class="card-img-top"
+            />
+            <div class="card-body text-center d-flex flex-column bod-top">
+              <p class="card-title fw-bold">
+                Bolsitas respuestos por unidad, contienen 15
+              </p>
+              <p class="price-main mt-2 mb-0">$7.600,00</p>
+              <p class="price-cash mt-1 mb-1">$6.300,00 con Efectivo</p>
+              <p class="installments mb-3">3 cuotas sin interés de $1.866,67</p>
+              <div class="mt-auto d-flex justify-content-center">
+                <button class="btn btn-carousel mx-1 flex-shrink-0">
+                  COMPRAR
+                </button>
+                <button class="btn btn-eye-carousel mx-1 flex-shrink-0">
+                  <i class="bi bi-eye me-1"></i> VER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-5 border-top footer-color">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1: Categorías -->
+          <div class="col-12 col-md-4 col-lg-4 mb-4 text-center text-md-start">
+            <h5 class="fw-bold mb-3">Categorías</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Quienes Somos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Trabajá con nosotros</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Cómo Comprar</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Política de Devolución</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block mb-2"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block"
+                  >Términos y condiciones consulta online</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Contacto -->
+          <div class="col-12 col-md-4 col-lg-4 mb-4 text-center text-md-start">
+            <h5 class="fw-bold mb-3">Contáctanos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-whatsapp me-2"></i>54-3456673456
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i>PetShopApolo@gmail.com
+              </li>
+              <li>
+                <i class="bi bi-geo-alt me-2"></i> Sucursales en : San Miguel de
+                Tucumán - Yerba Buena - Tafí Viejo - Banda del Río Salí
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Redes Sociales -->
+          <div class="col-12 col-md-4 col-lg-4 text-center text-md-start">
+            <h5 class="fw-bold mb-3">Sigamos conectados</h5>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-instagram fs-5"></i>
+              </a>
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-tiktok fs-5"></i>
+              </a>
+              <a href="#" class="icono-redes shadow">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 4: Medios De Pados -->
+          <div class="container py-4 text-center text-md-start">
+            <div class="row">
+              <div class="col-12">
+                <h6 class="fw-bold mb-3">Medios de pago</h6>
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                  <!-- Reemplazá los src por tus imágenes reales -->
+                  <img
+                    src="https://img.icons8.com/color/48/000000/visa.png"
+                    alt="Visa"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/mastercard.png"
+                    alt="MasterCard"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/amex.png"
+                    alt="American Express"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/diners-club.png"
+                    alt="Diners Club"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/bank-card-back-side.png"
+                    alt="Cabal"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/bank-card-front-side.png"
+                    alt="Naranja"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie de Footer-->
+      <div class="py-3 pie-footer">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-center align-items-center small"
+        >
+          <p class="mb-2 mb-md-0 text-light">
+            Copyright PetShop Apolo - 2025. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
